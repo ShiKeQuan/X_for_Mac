@@ -2,6 +2,23 @@
 
 > A lightweight macOS desktop application providing a native window experience for X (Twitter)
 
+## 📸 Screenshots
+
+### Original Interface
+<img src="screenshots/原界面.png" width="800" alt="Original Interface">
+
+### Hidden Elements
+<img src="screenshots/隐藏图标界面.png" width="800" alt="Hidden unnecessary UI elements">
+
+### Full-Width Center Mode
+<img src="screenshots/开启全屏界面.png" width="800" alt="Full-width center mode">
+
+### Settings Panel
+<div>
+  <img src="screenshots/功能界面1.png" width="400" alt="Settings Panel 1">
+  <img src="screenshots/功能界面2.png" width="400" alt="Settings Panel 2">
+</div>
+
 ## ✨ Features
 
 ### 🎯 Core Functions

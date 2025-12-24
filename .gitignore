@@ -20,7 +20,11 @@ DerivedData/
 
 # Build Output
 dist/
+release/
 *.app
+*.zip
+*.dmg
+*.sha256
 
 # Credentials
 .netrc

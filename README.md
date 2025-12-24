@@ -2,6 +2,23 @@
 
 > 一个轻量级的 macOS 桌面应用，为 X (Twitter) 提供原生窗口体验
 
+## 📸 应用截图
+
+### 原始界面
+<img src="screenshots/原界面.png" width="800" alt="原始界面">
+
+### 隐藏图标界面
+<img src="screenshots/隐藏图标界面.png" width="800" alt="隐藏不必要的界面元素">
+
+### 开启全屏界面
+<img src="screenshots/开启全屏界面.png" width="800" alt="中间全屏模式">
+
+### 功能设置面板
+<div>
+  <img src="screenshots/功能界面1.png" width="400" alt="设置面板1">
+  <img src="screenshots/功能界面2.png" width="400" alt="设置面板2">
+</div>
+
 ## ✨ 特性
 
 ### 🎯 核心功能
