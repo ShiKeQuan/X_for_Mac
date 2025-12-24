@@ -78,7 +78,44 @@ Create a lightweight macOS desktop wrapper for X (formerly Twitter) that loads t
 
 ## Status
 - App runs as .app bundle (manual pack + codesign), Google SSO blocked with warning, toolbar/navigation working.
-- Next: add clean-UI controls + localization and wire to injected script.
+- Clean UI features implemented with MutationObserver and SVG path matching. **(DONE)**
+- Multi-language support (Chinese/English) added to preferences. **(DONE)**
+- Layout controls: hide left/right sidebars, full-width center mode with auto-resize. **(DONE)**
+- WebView pinch-to-zoom enabled. **(DONE)**
+
+## Completed Clean UI Features
+### Hiding Options
+- **Hide Grok**: SVG path detection + MutationObserver to remove Grok buttons
+- **Hide Premium Sign Up**: Remove premium subscription prompts
+- **Hide Subscribe Cards**: Remove subscription promotional cards
+- **Hide Other Promotions**: Jobs, Business, Ads links
+- **Navigation Controls**: Hide Explore/Notifications/Messages/Communities/Bookmarks
+
+### Layout Controls **(NEW)**
+- **Hide Right Column**: Completely remove right sidebar
+- **Hide Left Sidebar**: Remove left navigation panel
+- **Full-Width Center Mode**: 
+  - Auto-hide left and right columns
+  - Center content with customizable width
+  - **Auto-resize to Window**: Dynamically adjust width based on window size (with max-width limit)
+  - Manual width control (600-3000px, default 1200px)
+- **Custom Padding**: Adjustable right padding
+
+### Technical Implementation
+- CSS injection at document end with MutationObserver for dynamic content
+- SVG path matching for icon-based detection (Grok, Communities)
+- Real-time window resize listener with debouncing
+- CSS variables for dynamic width adjustment
+- Preserved settings across launches via UserDefaults
+
+### Multi-language Support **(NEW)**
+- Language selector in preferences (Chinese/English)
+- Localized UI for all settings
+- Auto-detection for Google login warning message
+
+### Browser Enhancements **(NEW)**
+- Pinch-to-zoom gesture support on trackpad
+- Magnification enabled with WKWebView.allowsMagnification
 
 ## Assets
 - App icon: create simple monochrome "X" vector, export ICNS via Asset Catalog.
