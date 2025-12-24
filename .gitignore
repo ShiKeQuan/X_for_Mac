@@ -1,10 +1,46 @@
+# macOS System Files
 .DS_Store
-/.build
-/Packages
+.AppleDouble
+.LSOverride
+._*
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+
+# Xcode
 xcuserdata/
 DerivedData/
-.app
-/dist
+*.xcodeproj/
+*.xcworkspace/
 .swiftpm/configuration/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+# Build Output
+dist/
+*.app
+
+# Credentials
 .netrc
+
+# User Scripts (reference only, not part of the app)
+function.js
+function2.js
+
+# Source icon file (keep generated ICNS)
+ico.png
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary Files
+*.swp
+*.swo
+*~
+.*.sw?
+
+# Logs
+*.log

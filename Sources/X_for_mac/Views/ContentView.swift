@@ -6,7 +6,7 @@ struct ContentView: View {
     @State private var showingPreferences = false
 
     var body: some View {
-        WebView(viewModel: viewModel)
+        WebView(viewModel: viewModel, preferences: preferences)
             .toolbar {
                 ToolbarItemGroup(placement: .automatic) {
                     Button(action: viewModel.goBack) {
@@ -42,6 +42,9 @@ struct ContentView: View {
             }
             .onAppear {
                 viewModel.loadHome()
+            }
+            .onChange(of: preferences.cleanUIRevision) { _, _ in
+                viewModel.reload()
             }
             .alert("无法在应用内使用 Google 登录", isPresented: Binding(
                 get: { viewModel.authWarning != nil },
